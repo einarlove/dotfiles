@@ -7,7 +7,7 @@ source ~/.zsh/completion.zsh
 
 
 # Autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Prompt
 setopt PROMPT_SUBST
