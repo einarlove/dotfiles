@@ -1,0 +1,28 @@
+# Packages
+*.gz
+*.zip
+*.tar
+*.tgz
+
+# Private
+.env
+
+# Logs
+*.log
+*.sqlite
+
+# Cruft
+.DS_Store
+.monitor
+.nodemonignore
+Thumbs.db
+temp
+tmp
+*_tmp*
+
+# Sublime
+*.sublime-*
+
+# Xcode
+xcuserdata/
+project.xcworkspace/
