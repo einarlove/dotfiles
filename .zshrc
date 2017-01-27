@@ -16,8 +16,7 @@ autoload -U colors && colors
 
 PROMPT='%{$fg[yellow]%}%1d' # current directory
 PROMPT+='%{$fg[blue]%}$(__git_ps1 " %s")' # current git branch
-PROMPT+='%{$reset_color%} | '
-
+PROMPT+="%{$reset_color%} ▸ "
 
 # Key bindings
 bindkey ' ' magic-space  # [Space] - do history expansion
