@@ -15,6 +15,9 @@ alias hosts='sudo vim /etc/hosts'
 # Create simple python server
 alias pyserver="python -m SimpleHTTPServer"
 
+# Get file size of file or folder
+alias size="du -hs"
+
 # Moves a file to the MacOS trash
 trash () {
     command mv "$@" ~/.Trash
