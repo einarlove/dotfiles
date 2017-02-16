@@ -6,6 +6,9 @@ alias .....="cd ../../../.."
 
 alias ls='ls -AFhG'
 
+# Remove rucursivly
+alias rm='rm -rf'
+
 # `cat` with beautiful colors. requires: sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
@@ -14,6 +17,9 @@ alias hosts='sudo vim /etc/hosts'
 
 # Create simple python server
 alias pyserver="python -m SimpleHTTPServer"
+
+# Get file size of file or folder
+alias size="du -hs"
 
 # Moves a file to the MacOS trash
 trash () {

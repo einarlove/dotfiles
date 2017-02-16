@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    summonShortcut: 'Option+Q',
+    summonShortcut: 'Ctrl+P',
     fontSize: 16,
 
     // font family with optional fallbacks

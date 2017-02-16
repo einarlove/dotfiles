@@ -15,3 +15,5 @@
   unpublish = "!git push origin :$(git branch-name)"
   ours = "!f() { git checkout --ours $@ && git add $@; }; f"
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+[push]
+	default = matching
