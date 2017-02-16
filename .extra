@@ -6,6 +6,9 @@ alias .....="cd ../../../.."
 
 alias ls='ls -AFhG'
 
+# Remove rucursivly
+alias rm='rm -rf'
+
 # `cat` with beautiful colors. requires: sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
