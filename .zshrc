@@ -1,6 +1,9 @@
+autoload -U compinit && compinit
+
 # Bash autocomplete compatability so bash files can be loaded
 autoload bashcompinit
 bashcompinit
+
 source ~/.extra
 source ~/.zsh/history.zsh
 source ~/.zsh/completion.zsh
