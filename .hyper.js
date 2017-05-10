@@ -7,16 +7,16 @@ module.exports = {
     fontFamily: 'Inconsolata, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: '#C0C0C0',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#BEBDBD',
 
     // terminal background color
-    backgroundColor: '#000',
+    backgroundColor: '#1C1C1C',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -25,6 +25,11 @@ module.exports = {
     css: `
       .hyper_main {
         border-color: transparent !important;
+      }
+
+      .terms_termGroup:only-child {
+        margin-top: -15px;
+        height: calc(100% + 15px);
       }
     `,
 
@@ -49,20 +54,20 @@ module.exports = {
     // an array here instead of a color map object
     colors: {
       black: '#000000',
-      red: '#ff0000',
-      green: '#33ff00',
-      yellow: '#ffff00',
-      blue: '#0066ff',
-      magenta: '#cc00ff',
-      cyan: '#00ffff',
-      white: '#d0d0d0',
-      lightBlack: '#808080',
-      lightRed: '#ff0000',
-      lightGreen: '#33ff00',
-      lightYellow: '#ffff00',
-      lightBlue: '#0066ff',
-      lightMagenta: '#cc00ff',
-      lightCyan: '#00ffff',
+      red: '#E7452D',
+      green: '#5CBC12',
+      yellow: '#C0BD21',
+      blue: '#7095DC',
+      magenta: '#C444C0',
+      cyan: '#52BFC1',
+      white: '#C0C0C0',
+      lightBlack: '#5D5D5D',
+      lightRed: '#E95F5A',
+      lightGreen: '#72EE5D',
+      lightYellow: '#FCF55B',
+      lightBlue: '#5D66FA',
+      lightMagenta: '#E268FD',
+      lightCyan: '#8AEDEF',
       lightWhite: '#ffffff'
     },
 
@@ -81,19 +86,12 @@ module.exports = {
     bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
-
-    // URL to custom bell
-    // bellSoundURL: 'http://example.com/bell.mp3',
-
-    // for advanced config flags please refer to https://hyper.is/#cfg
+    copyOnSelect: false,
   },
 
   plugins: [
     'hypercwd',
-    'hyperterm-summon',
-    'hyperlinks',
-    'hyper-statusline'
+    'hyperterm-summon'
   ],
 
   // in development, you can create a directory under
