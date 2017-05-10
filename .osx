@@ -13,3 +13,6 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Change the port for Sketch Mirror server so it doesn't conflict with own local development
+defaults write com.bohemiancoding.sketch3.plist mirrorWebPort -int 9999
