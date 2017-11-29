@@ -50,3 +50,5 @@ export LC_ALL='en_US.UTF-8'; # no_NO.UTF-8
 # Colors for `ls`
 LSCOLORS=Gxfxcxdxbxegedabagacad
 
+## Show current working path in window title
+export PROMPT_COMMAND='echo -ne "\033]0;$PWD\007"'
