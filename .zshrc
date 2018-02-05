@@ -25,3 +25,9 @@ PROMPT+="%{$reset_color%} ▸ "
 
 # Key bindings
 bindkey ' ' magic-space  # [Space] - do history expansion
+
+case $TERM in
+  xterm*)
+    precmd () {print -Pn "\e]0;%~\a"}
+    ;;
+esac
